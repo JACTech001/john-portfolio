@@ -129,7 +129,7 @@ button { font: inherit; }
 .orbit-track--5 .orbit-tech { animation-duration: 33s; }
 .orbit-track--6 .orbit-tech { animation-duration: 40s; }
 .orbit-tech__symbol { font-size: 16px; font-weight: 800; }
-.orbit-tech__name { font-size: 7px; color: #aab1c5; }
+.orbit-tech__name { font-size: 7px; color: #a3a3a3; }
 .orbit-tech--javascript .orbit-tech__symbol { color: #e5e5e5; }
 .orbit-tech--react .orbit-tech__symbol { color: #e5e5e5; }
 .orbit-tech--next .orbit-tech__symbol { color: white; }
@@ -178,7 +178,7 @@ button { font: inherit; }
 .contact-section h2 { max-width: 760px; margin: 0 auto; }
 .contact-copy { color: var(--muted); font-size: 14px; margin: 22px auto 30px; }
 .contact-section > .button { margin-bottom: 100px; }
-.contact-footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding: 22px 0; color: #747b88; font-size: 10px; }
+.contact-footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding: 22px 0; color: #858585; font-size: 10px; }
 
 @media (max-width: 900px) {
   .main-nav { gap: 18px; }
