@@ -173,6 +173,48 @@ export default function Home() {
                 <p className="project-category">{project.category}</p>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
+                {project.screenshot && (
+                  <div className="project-gallery" aria-label={`${project.name} screenshots`}>
+                    <a
+                      className="project-gallery__main"
+                      href={project.screenshot}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open full-size ${project.name} main screenshot`}
+                    >
+                      <Image
+                        src={project.screenshot}
+                        alt={`${project.name} application main screen`}
+                        width={1600}
+                        height={900}
+                        sizes="(max-width: 640px) 100vw, 850px"
+                      />
+                      <span>Main preview</span>
+                    </a>
+                    {project.additionalScreenshots?.length > 0 && (
+                      <div className="project-gallery__additional">
+                        {project.additionalScreenshots.map((screenshot, index) => (
+                          <a
+                            href={screenshot}
+                            target="_blank"
+                            rel="noreferrer"
+                            key={screenshot}
+                            aria-label={`Open full-size ${project.name} additional screenshot ${index + 1}`}
+                          >
+                            <Image
+                              src={screenshot}
+                              alt={`${project.name} additional application screen ${index + 1}`}
+                              width={600}
+                              height={338}
+                              sizes="(max-width: 640px) 50vw, 190px"
+                            />
+                            <span>Dashboard</span>
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
                 <div className="skill-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
                 <div className="project-links">
                   {project.demo && <a href={project.demo} target="_blank" rel="noreferrer">Live preview <ArrowUpRight size={14} /></a>}
