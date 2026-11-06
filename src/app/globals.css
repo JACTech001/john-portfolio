@@ -395,3 +395,43 @@ button { font: inherit; }
 .social-icon--instagram { color: #E4405F !important; }
 .social-icon--linkedin { color: #0A66C2 !important; }
 .social-icon--email { color: #e5e5e5 !important; }
+
+
+/* Accessible mobile navigation dropdown */
+.mobile-navigation { display: none; position: relative; }
+.mobile-navigation__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255,255,255,.04);
+  color: #f5f5f5;
+  cursor: pointer;
+}
+.mobile-navigation__panel {
+  position: absolute;
+  top: calc(100% + 16px);
+  right: 0;
+  z-index: 20;
+  display: grid;
+  width: min(260px, calc(100vw - 40px));
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 14px;
+  background: rgba(12,12,12,.98);
+  box-shadow: 0 18px 50px rgba(0,0,0,.45);
+}
+.mobile-navigation__panel a {
+  padding: 13px 14px;
+  border-radius: 8px;
+  color: #e5e5e5;
+  font-size: 14px;
+}
+.mobile-navigation__panel a:hover,
+.mobile-navigation__panel a:focus-visible { background: rgba(255,255,255,.08); color: #fff; }
+@media (max-width: 640px) {
+  .mobile-navigation { display: block; }
+}
