@@ -16,6 +16,11 @@ export const metadata = {
   description:
     "Portfolio of Abel John Chiemerie, a software developer and cybersecurity enthusiast building thoughtful digital experiences.",
   applicationName: "Abel John — Portfolio",
+  icons: {
+    icon: "/images/profile/john.png",
+    shortcut: "/images/profile/john.png",
+    apple: "/images/profile/john.png",
+  },
   openGraph: {
     title: "Abel John Chiemerie | Software Developer",
     description:
