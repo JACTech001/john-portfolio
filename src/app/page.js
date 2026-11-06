@@ -75,8 +75,8 @@ export default function Home() {
           </div>
           <div className="hero-socials" aria-label="Social links">
             <a href="https://github.com/JACTech001" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={18} /></a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={18} /></a>
-            <a href="mailto:hello@abeljohn.dev" aria-label="Email"><Mail size={18} /></a>
+            <a href="#contact" aria-label="LinkedIn details coming soon"><Linkedin size={18} /></a>
+            <a href="#contact" aria-label="Contact"><Mail size={18} /></a>
           </div>
         </div>
         <div className="hero-visual">
@@ -168,7 +168,7 @@ export default function Home() {
         <p className="eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p>
         <h2>Let’s make something <span>meaningful.</span></h2>
         <p className="contact-copy">I’m open to conversations, collaborations and opportunities to grow as a developer.</p>
-        <a className="button button--primary" href="mailto:hello@abeljohn.dev">Start a conversation <ArrowUpRight size={17} /></a>
+        <a className="button button--primary" href="#contact">Start a conversation <ArrowUpRight size={17} /></a>
         <div className="contact-footer">
           <span>© {new Date().getFullYear()} Abel John Chiemerie</span>
           <span>Designed with intention.</span>
