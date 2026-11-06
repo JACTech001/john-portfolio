@@ -131,7 +131,8 @@ button { font: inherit; }
 .orbit-track--5 .orbit-tech { animation-duration: 33s; }
 .orbit-track--6 .orbit-tech { animation-duration: 40s; }
 .orbit-tech__symbol { font-size: 16px; font-weight: 800; }
-.orbit-tech__name { font-size: 7px; color: #a3a3a3; }
+.orbit-tech__logo { width: 21px; height: 21px; max-width: 21px; max-height: 21px; object-fit: contain; display: block; flex: 0 0 auto; }
+.orbit-tech__name { font-size: 7px; color: #a3a3a3; line-height: 1; }
 .orbit-tech--javascript .orbit-tech__symbol { color: #e5e5e5; }
 .orbit-tech--react .orbit-tech__symbol { color: #e5e5e5; }
 .orbit-tech--next .orbit-tech__symbol { color: white; }
@@ -207,6 +208,7 @@ button { font: inherit; }
   .orbit-core__monogram { font-size: 27px; }
   .orbit-tech { width: 47px; height: 47px; margin-left: -23px; }
   .orbit-tech__name { font-size: 7px; }
+  .orbit-tech__logo { width: 18px; height: 18px; max-width: 18px; max-height: 18px; }
   .scroll-cue { bottom: 28px; }
   .portrait-backdrop { background-size: cover, cover, auto 72vh; background-position: center, center, center calc(20% + 30px); opacity: .48; }
   .content-section, .skills-section, .projects-section, .approach-section { display: block; padding-top: 85px; padding-bottom: 55px; }
