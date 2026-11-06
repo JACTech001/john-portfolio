@@ -43,21 +43,23 @@ button { font: inherit; }
 .portrait-backdrop {
   position: fixed;
   z-index: -2;
-  top: 70px;
-  right: max(2vw, calc((100vw - 1320px) / 2));
-  width: min(48vw, 650px);
-  height: calc(100vh - 80px);
+  inset: 0;
+  width: 100%;
+  height: 100vh;
   pointer-events: none;
-  background-image: linear-gradient(90deg, #050505 0%, rgba(5,5,5,.48) 25%, rgba(5,5,5,.12) 70%, #050505 100%), linear-gradient(0deg, #050505 0%, transparent 28%, rgba(5,5,5,.14) 80%, #050505 100%), url("/images/profile/john.png");
+  background-color: #050505;
+  background-image:
+    linear-gradient(90deg, #050505 0%, rgba(5,5,5,.82) 16%, rgba(5,5,5,.18) 38%, rgba(5,5,5,.18) 62%, rgba(5,5,5,.82) 84%, #050505 100%),
+    linear-gradient(0deg, #050505 0%, rgba(5,5,5,.08) 22%, rgba(5,5,5,.04) 72%, #050505 100%),
+    url("/images/profile/john.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  opacity: .22;
-  filter: grayscale(1) contrast(1.08) brightness(.72);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 70%, transparent 100%);
+  background-size: cover, cover, auto 88vh;
+  background-position: center, center, center 54%;
+  opacity: .56;
+  filter: grayscale(1) contrast(1.12) brightness(.96);
 }
-.portrait-backdrop__shade { position: absolute; inset: 0; background: linear-gradient(90deg, #050505 0%, transparent 60%); }
-.portrait-backdrop__glow { position: absolute; inset: 25% 0 10%; background: radial-gradient(ellipse at 65% 45%, rgba(255,255,255,.07), transparent 58%); }
+.portrait-backdrop__shade { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 24%, rgba(5,5,5,.16) 78%, #050505 112%); }
+.portrait-backdrop__glow { position: absolute; inset: 15% 20%; background: radial-gradient(ellipse at center, rgba(255,255,255,.055), transparent 68%); }
 
 .section-shell { width: min(1180px, calc(100% - 64px)); margin-inline: auto; position: relative; }
 .site-header {
@@ -206,7 +208,7 @@ button { font: inherit; }
   .orbit-tech { width: 47px; height: 47px; margin-left: -23px; }
   .orbit-tech__name { font-size: 6px; }
   .scroll-cue { bottom: 28px; }
-  .portrait-backdrop { right: -100px; width: 100vw; opacity: .13; }
+  .portrait-backdrop { background-size: cover, cover, auto 72vh; background-position: center, center, center 48%; opacity: .48; }
   .content-section, .skills-section, .projects-section, .approach-section { display: block; padding-top: 85px; padding-bottom: 55px; }
   .section-kicker { margin-bottom: 35px; }
   .section-heading h2, .contact-section h2 { font-size: 39px; }
