@@ -366,3 +366,30 @@ button { font: inherit; }
   .project-links { gap: 12px 16px; }
   .contact-details { flex-direction: column; align-items: center; margin: -65px auto 75px; }
 }
+
+
+/* Social platform icons use their familiar brand colours */
+.hero-socials { align-items: center; gap: 19px; }
+.hero-socials .social-icon {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 50%;
+  background: rgba(255,255,255,.035);
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+.hero-socials .social-icon:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255,255,255,.35);
+  background: rgba(255,255,255,.08);
+}
+.social-icon--github { color: #f5f5f5 !important; }
+.social-icon--whatsapp { color: #25D366 !important; }
+.social-icon--x { color: #ffffff !important; }
+.social-icon--facebook { color: #1877F2 !important; }
+.social-icon--instagram { color: #E4405F !important; }
+.social-icon--linkedin { color: #0A66C2 !important; }
+.social-icon--email { color: #e5e5e5 !important; }
