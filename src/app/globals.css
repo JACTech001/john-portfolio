@@ -54,7 +54,7 @@ button { font: inherit; }
     url("/images/profile/john.png");
   background-repeat: no-repeat;
   background-size: cover, cover, auto 88vh;
-  background-position: center, center, center 54%;
+  background-position: center, center, center calc(54% + 30px);
   opacity: .56;
   filter: grayscale(1) contrast(1.12) brightness(.96);
 }
@@ -208,7 +208,7 @@ button { font: inherit; }
   .orbit-tech { width: 47px; height: 47px; margin-left: -23px; }
   .orbit-tech__name { font-size: 6px; }
   .scroll-cue { bottom: 28px; }
-  .portrait-backdrop { background-size: cover, cover, auto 72vh; background-position: center, center, center 48%; opacity: .48; }
+  .portrait-backdrop { background-size: cover, cover, auto 72vh; background-position: center, center, center calc(48% + 30px); opacity: .48; }
   .content-section, .skills-section, .projects-section, .approach-section { display: block; padding-top: 85px; padding-bottom: 55px; }
   .section-kicker { margin-bottom: 35px; }
   .section-heading h2, .contact-section h2 { font-size: 39px; }
@@ -225,3 +225,12 @@ button { font: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* Recognisable technology brand colours inside the otherwise monochrome orbit */
+.orbit-tech--javascript .orbit-tech__symbol { color: #f7df1e; }
+.orbit-tech--react .orbit-tech__symbol { color: #61dafb; }
+.orbit-tech--next .orbit-tech__symbol { color: #ffffff; }
+.orbit-tech--node .orbit-tech__symbol { color: #83cd29; }
+.orbit-tech--postgres .orbit-tech__symbol { color: #336791; }
+.orbit-tech--github .orbit-tech__symbol { color: #ffffff; }
