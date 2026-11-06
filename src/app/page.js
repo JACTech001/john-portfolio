@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowDown, ArrowDownRight, ArrowUpRight, Github, Linkedin, Mail, ShieldCheck, Code2, GraduationCap, Menu } from "lucide-react";
+import { ArrowDown, ArrowDownRight, ArrowUpRight, Mail, ShieldCheck, Code2, GraduationCap, Menu } from "lucide-react";
 import TechnologyOrbit from "@/components/TechnologyOrbit";
 
 const projects = [
@@ -74,8 +74,8 @@ export default function Home() {
             <a className="text-link" href="#about">A little about me <ArrowDownRight size={17} /></a>
           </div>
           <div className="hero-socials" aria-label="Social links">
-            <a href="https://github.com/JACTech001" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={18} /></a>
-            <a href="#contact" aria-label="LinkedIn details coming soon"><Linkedin size={18} /></a>
+            <a href="https://github.com/JACTech001" target="_blank" rel="noreferrer" aria-label="GitHub"><span className="social-wordmark">GH</span></a>
+            <a href="#contact" aria-label="LinkedIn details coming soon"><span className="social-wordmark">in</span></a>
             <a href="#contact" aria-label="Contact"><Mail size={18} /></a>
           </div>
         </div>
