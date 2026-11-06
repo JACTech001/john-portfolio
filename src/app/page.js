@@ -60,6 +60,7 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </nav>
         <a className="header-cta" href="#contact">Let’s talk <ArrowUpRight size={15} /></a>
@@ -156,8 +157,46 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="content-section section-shell experience-section" id="experience">
+        <div className="section-kicker">04 — BACKGROUND</div>
+        <div className="section-heading section-heading--wide">
+          <p className="eyebrow">WHERE I’VE LEARNED AND GROWN</p>
+          <h2>My journey in <span>technology.</span></h2>
+          <p className="section-intro">A foundation in computer science, supported by practical experience and a commitment to continuous learning.</p>
+        </div>
+        <div className="experience-grid">
+          <article className="experience-card">
+            <div className="experience-card__top">
+              <span className="experience-card__label">EDUCATION</span>
+              <span className="experience-card__date">2026</span>
+            </div>
+            <h3>B.Sc. Computer Science</h3>
+            <p className="experience-card__place">University of Nigeria, Nsukka</p>
+            <p>Built a foundation in computing, software development, data management and the principles behind designing technology solutions.</p>
+          </article>
+          <article className="experience-card">
+            <div className="experience-card__top">
+              <span className="experience-card__label">INDUSTRIAL TRAINING</span>
+              <span className="experience-card__date">6 months</span>
+            </div>
+            <h3>SIWES Trainee</h3>
+            <p className="experience-card__place">ICT Centre, University of Nigeria, Nsukka · Digitalization Unit</p>
+            <p>Completed a six-month industrial training placement, gaining practical exposure to ICT-centre workflows and digital operations.</p>
+          </article>
+          <article className="experience-card experience-card--learning">
+            <div className="experience-card__top">
+              <span className="experience-card__label">CURRENT LEARNING</span>
+              <span className="experience-card__date">Ongoing</span>
+            </div>
+            <h3>Cybersecurity & secure development</h3>
+            <p className="experience-card__place">Independent learning</p>
+            <p>Continuously developing my understanding of web application security, secure coding practices and the fundamentals of protecting digital systems.</p>
+          </article>
+        </div>
+      </section>
+
       <section className="content-section section-shell approach-section" id="approach">
-        <div className="section-kicker">04 — APPROACH</div>
+        <div className="section-kicker">05 — APPROACH</div>
         <div className="approach-card">
           <div className="approach-icon"><ShieldCheck size={25} /></div>
           <div>
@@ -170,7 +209,7 @@ export default function Home() {
       </section>
 
       <section className="contact-section section-shell" id="contact">
-        <div className="section-kicker">05 — CONTACT</div>
+        <div className="section-kicker">06 — CONTACT</div>
         <p className="eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p>
         <h2>Let’s make something <span>meaningful.</span></h2>
         <p className="contact-copy">I’m open to conversations, collaborations and opportunities to grow as a developer.</p>
