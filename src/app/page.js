@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowDown, ArrowDownRight, ArrowUpRight, Mail, ShieldCheck, Code2, GraduationCap } from "lucide-react";
 import { cacheLife } from "next/cache";
 import TechnologyOrbit from "@/components/TechnologyOrbit";
@@ -13,6 +14,8 @@ const projects = [
     tags: ["React", "Node.js", "PostgreSQL", "Prisma"],
     github: "https://github.com/JACTech001/SACA-VS",
     demo: "https://saca-vs.vercel.app/",
+    screenshot: "/images/screenshots/Macbook-Air-saca-vs.vercel.app.png",
+    additionalScreenshots: ["/images/screenshots/Macbook-Air-saca-vs.vercel.app-dashbaord.png"],
   },
   {
     number: "02",
@@ -22,6 +25,8 @@ const projects = [
     tags: ["React", "Firebase", "Firestore"],
     github: "https://github.com/JACTech001/student-discussion-forum",
     demo: "https://sd-forum.vercel.app/",
+    screenshot: "/images/screenshots/Macbook-Air-sd-forum.vercel.app.png",
+    additionalScreenshots: ["/images/screenshots/Macbook-Air-sd-forum.vercel.app-dashboard.png"],
   },
   {
     number: "03",
