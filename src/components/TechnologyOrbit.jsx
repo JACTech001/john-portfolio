@@ -1,12 +1,36 @@
 "use client";
 
 const technologies = [
-  { name: "JavaScript", short: "JS", className: "orbit-tech--javascript" },
-  { name: "React", short: "⚛", className: "orbit-tech--react" },
-  { name: "Next.js", short: "N", className: "orbit-tech--next" },
-  { name: "Node.js", short: "node", className: "orbit-tech--node" },
-  { name: "PostgreSQL", short: "PG", className: "orbit-tech--postgres" },
-  { name: "GitHub", short: "GH", className: "orbit-tech--github" },
+  {
+    name: "JavaScript",
+    logo: "https://cdn.simpleicons.org/javascript/F7DF1E",
+    className: "orbit-tech--javascript",
+  },
+  {
+    name: "React",
+    logo: "https://cdn.simpleicons.org/react/61DAFB",
+    className: "orbit-tech--react",
+  },
+  {
+    name: "Next.js",
+    logo: "https://cdn.simpleicons.org/nextdotjs/FFFFFF",
+    className: "orbit-tech--next",
+  },
+  {
+    name: "Node.js",
+    logo: "https://cdn.simpleicons.org/nodedotjs/5FA04E",
+    className: "orbit-tech--node",
+  },
+  {
+    name: "PostgreSQL",
+    logo: "https://cdn.simpleicons.org/postgresql/4169E1",
+    className: "orbit-tech--postgres",
+  },
+  {
+    name: "GitHub",
+    logo: "https://cdn.simpleicons.org/github/FFFFFF",
+    className: "orbit-tech--github",
+  },
 ];
 
 export default function TechnologyOrbit() {
@@ -25,7 +49,13 @@ export default function TechnologyOrbit() {
           key={technology.name}
         >
           <span className={`orbit-tech ${technology.className}`} title={technology.name}>
-            <span className="orbit-tech__symbol">{technology.short}</span>
+            <img
+              className="orbit-tech__logo"
+              src={technology.logo}
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+            />
             <span className="orbit-tech__name">{technology.name}</span>
           </span>
         </div>
