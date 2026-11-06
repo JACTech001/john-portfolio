@@ -322,3 +322,16 @@ button { font: inherit; }
   font-size: 13px;
   line-height: 1.75;
 }
+
+
+/* Keep experience card content grouped naturally instead of stretching it vertically */
+.experience-card {
+  display: block;
+  min-height: 0;
+}
+.experience-card--learning { min-height: 0; }
+.experience-card__top { margin-bottom: 16px; }
+.experience-card__place { margin-bottom: 10px !important; }
+.experience-card > p:last-child { margin: 0; }
+.education-project { margin-top: 18px; padding-top: 16px; }
+.education-project h4 { margin-top: 8px; }
