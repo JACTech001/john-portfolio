@@ -39,6 +39,19 @@ const skillGroups = [
   { title: "Security interests", items: ["Web application security", "Secure development", "Security fundamentals"] },
 ];
 
+function SocialIcon({ name }) {
+  const common = { viewBox: "0 0 24 24", width: 20, height: 20, fill: "currentColor", "aria-hidden": true };
+  const paths = {
+    github: <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.23-5.1 5.51.4.35.76 1.03.76 2.08V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z" />,
+    whatsapp: <path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.2l5.7-1.5A11.8 11.8 0 0 0 20.5 3.5ZM12 21a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-3.4.9.9-3.3-.2-.4A9.8 9.8 0 1 1 12 21Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-1-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.6-.4Z" />,
+    instagram: <><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" strokeWidth="2.2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" strokeWidth="2.2"/><circle cx="17.7" cy="6.5" r="1.25"/></>,
+    facebook: <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8h3.4Z" />,
+    x: <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.8 5.7 22H2.5l7.3-8.4L2 2h6.5l4.5 6.7L18.9 2Zm-1.1 18h1.7L7.5 3.9H5.7L17.8 20Z" />,
+    linkedin: <path d="M5.2 3.2a2.1 2.1 0 1 1 0 4.2 2.1 2.1 0 0 1 0-4.2ZM3.4 9h3.6v11.6H3.4V9Zm5.8 0h3.4v1.6h.1c.5-.9 1.7-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.5v6.4H17v-5.7c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1v5.8H9.2V9Z" />
+  };
+  return <svg {...common}>{paths[name]}</svg>;
+}
+
 async function CurrentYear() {
   "use cache";
   cacheLife("days");
@@ -86,9 +99,13 @@ export default function Home() {
             <a className="text-link" href="#about">A little about me <ArrowDownRight size={17} /></a>
           </div>
           <div className="hero-socials" aria-label="Social links">
-            <a href="https://github.com/JACTech001" target="_blank" rel="noreferrer" aria-label="GitHub"><span className="social-wordmark">GH</span></a>
-            <a href="https://wa.me/2349068417314" target="_blank" rel="noreferrer" aria-label="WhatsApp"><span className="social-wordmark">WA</span></a>
-            <a href="mailto:abelchiemerie001@gmail.com" aria-label="Email"><Mail size={18} /></a>
+            <a className="social-icon social-icon--github" href="https://github.com/JACTech001" target="_blank" rel="noreferrer" aria-label="GitHub"><SocialIcon name="github" /></a>
+            <a className="social-icon social-icon--whatsapp" href="https://wa.me/2349068417314" target="_blank" rel="noreferrer" aria-label="WhatsApp"><SocialIcon name="whatsapp" /></a>
+            <a className="social-icon social-icon--x" href="#contact" title="Add your X profile URL" aria-label="X profile link to be added"><SocialIcon name="x" /></a>
+            <a className="social-icon social-icon--facebook" href="#contact" title="Add your Facebook profile URL" aria-label="Facebook profile link to be added"><SocialIcon name="facebook" /></a>
+            <a className="social-icon social-icon--instagram" href="#contact" title="Add your Instagram profile URL" aria-label="Instagram profile link to be added"><SocialIcon name="instagram" /></a>
+            <a className="social-icon social-icon--linkedin" href="#contact" title="Add your LinkedIn profile URL" aria-label="LinkedIn profile link to be added"><SocialIcon name="linkedin" /></a>
+            <a className="social-icon social-icon--email" href="mailto:abelchiemerie001@gmail.com" aria-label="Email"><Mail size={19} /></a>
           </div>
         </div>
         <div className="hero-visual">
