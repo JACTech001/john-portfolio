@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { ArrowDown, ArrowDownRight, ArrowUpRight, Mail, ShieldCheck, Code2, GraduationCap, Menu } from "lucide-react";
+import { ArrowDown, ArrowDownRight, ArrowUpRight, Mail, ShieldCheck, Code2, GraduationCap } from "lucide-react";
 import { cacheLife } from "next/cache";
 import TechnologyOrbit from "@/components/TechnologyOrbit";
+import MobileNavigation from "@/components/MobileNavigation";
 
 const projects = [
   {
@@ -82,7 +83,7 @@ export default function Home() {
           <a href="#contact">Contact</a>
         </nav>
         <a className="header-cta" href="#contact">Let’s talk <ArrowUpRight size={15} /></a>
-        <button className="mobile-menu" aria-label="Navigation menu"><Menu size={22} /></button>
+        <MobileNavigation />
       </header>
 
       <section className="hero section-shell" id="home">
