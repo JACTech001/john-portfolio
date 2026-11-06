@@ -16,7 +16,7 @@ export default function TechnologyOrbit() {
       <div className="orbit-ring orbit-ring--middle" />
       <div className="orbit-ring orbit-ring--inner" />
       <div className="orbit-core">
-        <span className="orbit-core__monogram">AJ</span>
+        <span className="orbit-core__monogram">JACTech</span>
         <span className="orbit-core__label">BUILD · SECURE · CREATE</span>
       </div>
       {technologies.map((technology, index) => (
