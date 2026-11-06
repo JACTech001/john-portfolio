@@ -173,6 +173,11 @@ export default function Home() {
             <h3>B.Sc. Computer Science</h3>
             <p className="experience-card__place">University of Nigeria, Nsukka</p>
             <p>Built a foundation in computing, software development, data management and the principles behind designing technology solutions.</p>
+            <div className="education-project">
+              <span>FINAL-YEAR PROJECT</span>
+              <h4>Secure Academic Certificate Management and Verification System Using Blockchain Technology and Artificial Intelligence</h4>
+              <p>Designed and developed a certificate management and verification solution focused on improving the integrity and trustworthiness of academic credentials through blockchain technology and AI-assisted processes.</p>
+            </div>
           </article>
           <article className="experience-card">
             <div className="experience-card__top">
