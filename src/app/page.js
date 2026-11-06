@@ -10,6 +10,8 @@ const projects = [
     category: "Blockchain · AI · Web application",
     description: "A secure academic certificate management and verification platform exploring blockchain-backed trust and AI-assisted workflows.",
     tags: ["React", "Node.js", "PostgreSQL", "Prisma"],
+    github: "https://github.com/JACTech001/SACA-VS",
+    demo: "https://saca-vs.vercel.app/",
   },
   {
     number: "02",
@@ -17,6 +19,8 @@ const projects = [
     category: "Community · Full-stack application",
     description: "A discussion and learning platform designed to bring conversations, study resources and student engagement into one place.",
     tags: ["React", "Firebase", "Firestore"],
+    github: "https://github.com/JACTech001/student-discussion-forum",
+    demo: "https://sd-forum.vercel.app/",
   },
   {
     number: "03",
@@ -24,6 +28,7 @@ const projects = [
     category: "Property discovery · Marketplace",
     description: "A marketplace concept focused on property discovery and pre-owned items, designed with room to grow beyond its initial market.",
     tags: ["Product design", "Web development"],
+    github: "https://github.com/JACTech001/SOG",
   },
 ];
 
@@ -82,8 +87,8 @@ export default function Home() {
           </div>
           <div className="hero-socials" aria-label="Social links">
             <a href="https://github.com/JACTech001" target="_blank" rel="noreferrer" aria-label="GitHub"><span className="social-wordmark">GH</span></a>
-            <a href="#contact" aria-label="LinkedIn details coming soon"><span className="social-wordmark">in</span></a>
-            <a href="#contact" aria-label="Contact"><Mail size={18} /></a>
+            <a href="https://wa.me/2349068417314" target="_blank" rel="noreferrer" aria-label="WhatsApp"><span className="social-wordmark">WA</span></a>
+            <a href="mailto:abelchiemerie001@gmail.com" aria-label="Email"><Mail size={18} /></a>
           </div>
         </div>
         <div className="hero-visual">
@@ -150,6 +155,11 @@ export default function Home() {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <div className="skill-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+                <div className="project-links">
+                  {project.demo && <a href={project.demo} target="_blank" rel="noreferrer">Live preview <ArrowUpRight size={14} /></a>}
+                  <a href={project.github} target="_blank" rel="noreferrer">GitHub repository <ArrowUpRight size={14} /></a>
+                  {!project.demo && <span className="project-status">In development · No live demo yet</span>}
+                </div>
               </div>
               <span className="project-arrow" aria-hidden="true"><ArrowUpRight size={22} /></span>
             </article>
@@ -218,7 +228,11 @@ export default function Home() {
         <p className="eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p>
         <h2>Let’s make something <span>meaningful.</span></h2>
         <p className="contact-copy">I’m open to conversations, collaborations and opportunities to grow as a developer.</p>
-        <a className="button button--primary" href="#contact">Start a conversation <ArrowUpRight size={17} /></a>
+        <a className="button button--primary" href="mailto:abelchiemerie001@gmail.com?subject=Portfolio%20Enquiry">Email me <ArrowUpRight size={17} /></a>
+        <div className="contact-details">
+          <a href="mailto:abelchiemerie001@gmail.com"><Mail size={16} /> abelchiemerie001@gmail.com</a>
+          <a href="https://wa.me/2349068417314" target="_blank" rel="noreferrer">WhatsApp: +234 906 841 7314 <ArrowUpRight size={14} /></a>
+        </div>
         <div className="contact-footer">
           <span>© <CurrentYear /> Abel John Chiemerie</span>
           <span>Designed with intention.</span>
