@@ -234,3 +234,64 @@ button { font: inherit; }
 .orbit-tech--node .orbit-tech__symbol { color: #83cd29; }
 .orbit-tech--postgres .orbit-tech__symbol { color: #336791; }
 .orbit-tech--github .orbit-tech__symbol { color: #ffffff; }
+
+
+/* Experience, education and continuous learning */
+.experience-section { grid-template-columns: .32fr 1fr; }
+.experience-grid {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 42px;
+}
+.experience-card {
+  min-height: 225px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.018);
+  display: flex;
+  flex-direction: column;
+}
+.experience-card--learning { grid-column: 1 / -1; min-height: 190px; }
+.experience-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.experience-card__label, .experience-card__date {
+  color: #929292;
+  font-size: 11px;
+  letter-spacing: .13em;
+}
+.experience-card__date { letter-spacing: .04em; }
+.experience-card h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -.04em;
+}
+.experience-card__place {
+  color: #e0e0e0 !important;
+  font-size: 13px !important;
+  margin: 0 0 15px !important;
+}
+.experience-card > p:last-child {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: auto 0 0;
+}
+@media (max-width: 900px) {
+  .experience-section { grid-template-columns: 150px 1fr; }
+  .experience-grid { grid-column: 2; }
+}
+@media (max-width: 640px) {
+  .experience-section { display: block; }
+  .experience-grid { grid-template-columns: 1fr; margin-top: 30px; }
+  .experience-card, .experience-card--learning { grid-column: auto; min-height: 0; padding: 23px; }
+  .experience-card__top { margin-bottom: 22px; }
+}
