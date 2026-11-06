@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowDown, ArrowDownRight, ArrowUpRight, Mail, ShieldCheck, Code2, GraduationCap } from "lucide-react";
+import { ArrowDown, ArrowDownRight, ArrowUpRight, Download, Mail, ShieldCheck, Code2, GraduationCap } from "lucide-react";
 import { cacheLife } from "next/cache";
 import TechnologyOrbit from "@/components/TechnologyOrbit";
 import MobileNavigation from "@/components/MobileNavigation";
@@ -100,6 +100,9 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button button--primary" href="#projects">Explore my work <ArrowUpRight size={17} /></a>
+            <a className="button button--outline" href="/cv/Abel-John-Chiemerie-CV.pdf" download>
+              Download CV <Download size={16} />
+            </a>
             <a className="text-link" href="#about">A little about me <ArrowDownRight size={17} /></a>
           </div>
           <div className="hero-socials" aria-label="Social links">
