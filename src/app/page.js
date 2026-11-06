@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowDown, ArrowDownRight, ArrowUpRight, Mail, ShieldCheck, Code2, GraduationCap, Menu } from "lucide-react";
+import { cacheLife } from "next/cache";
 import TechnologyOrbit from "@/components/TechnologyOrbit";
 
 const projects = [
@@ -32,6 +33,12 @@ const skillGroups = [
   { title: "Tools & workflow", items: ["Git", "GitHub", "Postman", "VS Code", "Vercel"] },
   { title: "Security interests", items: ["Web application security", "Secure development", "Security fundamentals"] },
 ];
+
+async function CurrentYear() {
+  "use cache";
+  cacheLife("days");
+  return new Date().getFullYear();
+}
 
 export default function Home() {
   return (
@@ -170,7 +177,7 @@ export default function Home() {
         <p className="contact-copy">I’m open to conversations, collaborations and opportunities to grow as a developer.</p>
         <a className="button button--primary" href="#contact">Start a conversation <ArrowUpRight size={17} /></a>
         <div className="contact-footer">
-          <span>© {new Date().getFullYear()} Abel John Chiemerie</span>
+          <span>© <CurrentYear /> Abel John Chiemerie</span>
           <span>Designed with intention.</span>
           <a href="#home">Back to top ↑</a>
         </div>
