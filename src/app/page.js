@@ -51,7 +51,6 @@ export default function Home() {
 
       <header className="site-header">
         <Link className="brand" href="#home" aria-label="Abel John Chiemerie home">
-          <span className="brand__mark">AJ.</span>
           <span className="brand__text">
             <strong>Abel John</strong>
             <small>Software Developer</small>
