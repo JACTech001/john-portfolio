@@ -101,7 +101,7 @@ export default function Home() {
           <div className="hero-socials" aria-label="Social links">
             <a className="social-icon social-icon--github" href="https://github.com/JACTech001" target="_blank" rel="noreferrer" aria-label="GitHub"><SocialIcon name="github" /></a>
             <a className="social-icon social-icon--whatsapp" href="https://wa.me/2349068417314" target="_blank" rel="noreferrer" aria-label="WhatsApp"><SocialIcon name="whatsapp" /></a>
-            <a className="social-icon social-icon--x" href="#contact" title="Add your X profile URL" aria-label="X profile link to be added"><SocialIcon name="x" /></a>
+            <a className="social-icon social-icon--x" href="https://x.com/JACTech001" target="_blank" rel="noreferrer" aria-label="X"><SocialIcon name="x" /></a>
             <a className="social-icon social-icon--linkedin" href="#contact" title="Add your LinkedIn profile URL" aria-label="LinkedIn profile link to be added"><SocialIcon name="linkedin" /></a>
             <a className="social-icon social-icon--email" href="mailto:abelchiemerie001@gmail.com" aria-label="Email"><Mail size={19} /></a>
           </div>
